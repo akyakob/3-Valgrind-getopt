@@ -1,0 +1,118 @@
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+
+aflag = 0, cvalue = (null), bflag = 0, dvalue = (null)
+
+
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is '-a'
+
+getopt() returned ='a'
+aflag = 1, cvalue = (null), bflag = 0, dvalue = (null)
+
+
+Option -c requires an argument.
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is '-c'
+
+getopt() returned ='?'
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is '-c'
+Raw parameter 2 is 'WORD'
+
+getopt() returned ='c'
+aflag = 0, cvalue = WORD, bflag = 0, dvalue = (null)
+
+
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is '-cWORD'
+
+getopt() returned ='c'
+aflag = 0, cvalue = WORD, bflag = 0, dvalue = (null)
+
+
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is '-a'
+Raw parameter 2 is '-c'
+Raw parameter 3 is 'WORD1'
+Raw parameter 4 is '-c'
+Raw parameter 5 is 'WORD2'
+
+getopt() returned ='a'
+getopt() returned ='c'
+getopt() returned ='c'
+aflag = 1, cvalue = WORD2, bflag = 0, dvalue = (null)
+
+
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is 'something'
+
+aflag = 0, cvalue = (null), bflag = 0, dvalue = (null)
+Non-option argument 'something'
+
+
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is '-d'
+Raw parameter 2 is 'WORD'
+
+getopt() returned ='d'
+aflag = 0, cvalue = (null), bflag = 0, dvalue = WORD
+
+
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is '-b'
+
+getopt() returned ='b'
+aflag = 0, cvalue = (null), bflag = 1, dvalue = (null)
+
+
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is '-b'
+Raw parameter 2 is '-c'
+Raw parameter 3 is 'WORD1'
+Raw parameter 4 is '-d'
+Raw parameter 5 is 'WORD2'
+
+getopt() returned ='b'
+getopt() returned ='c'
+getopt() returned ='d'
+aflag = 0, cvalue = WORD1, bflag = 1, dvalue = WORD2
+
+
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is '-b'
+Raw parameter 2 is '-d'
+Raw parameter 3 is 'WORD1'
+Raw parameter 4 is '-b'
+Raw parameter 5 is '-c'
+Raw parameter 6 is 'WORD2'
+
+getopt() returned ='b'
+getopt() returned ='d'
+getopt() returned ='b'
+getopt() returned ='c'
+aflag = 0, cvalue = WORD2, bflag = 1, dvalue = WORD1
+
+
+Dumping raw command line parameters
+Raw parameter 0 is './lab_d'
+Raw parameter 1 is '-c'
+Raw parameter 2 is 'WORD1'
+Raw parameter 3 is '-c'
+Raw parameter 4 is 'WORD2'
+
+getopt() returned ='c'
+getopt() returned ='c'
+aflag = 0, cvalue = WORD2, bflag = 0, dvalue = (null)
+
+

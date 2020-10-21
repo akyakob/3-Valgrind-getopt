@@ -1,0 +1,18 @@
+==1560== Memcheck, a memory error detector
+==1560== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1560== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==1560== Command: ./simpleTest
+==1560== 
+This program inserts 3 objects into a dynamic array of 2 entries
+Line 1 contains text 'First line'
+Line 2 contains text 'Second line'
+Line 3 contains text 'Third line'
+==1560== 
+==1560== HEAP SUMMARY:
+==1560==     in use at exit: 0 bytes in 0 blocks
+==1560==   total heap usage: 4 allocs, 4 frees, 61,112 bytes allocated
+==1560== 
+==1560== All heap blocks were freed -- no leaks are possible
+==1560== 
+==1560== For counts of detected and suppressed errors, rerun with: -v
+==1560== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

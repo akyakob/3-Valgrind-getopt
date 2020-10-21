@@ -1,0 +1,34 @@
+First 6 words in dictionary:
+dermatitis
+toxins
+wisted
+benedictions
+Tera
+petrochemistry's
+                
+Last 6 words in dictionary:
+harken
+Pict's
+Sidman's
+intercohort
+pressurize
+besotting
+                
+Number of words:
+206590 engWords.txt
+------- Running Program -------
+First 6 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+ petrochemistry's
+Last 6 elements:
+ harken
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590

@@ -1,0 +1,130 @@
+Should print program help
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+getopt_long_only() returned ='w' index = '0'
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+getopt_long_only() returned ='i' index = '0'
+getopt_long_only() returned ='w' index = '0'
+getopt_long_only() returned ='h' index = '0'
+./TestDarray: option requires an argument -- 'i'
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+getopt_long_only() returned ='?' index = '0'
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+getopt_long_only() returned ='h' index = '0'
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+getopt_long_only() returned ='h' index = '3'
+Should print 5 lines help
+getopt_long_only() returned ='i' index = '0'
+First 6 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+ petrochemistry's
+Last 6 elements:
+ harken
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590
+getopt_long_only() returned ='i' index = '0'
+getopt_long_only() returned ='w' index = '0'
+First 5 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+Last 5 elements:
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590
+getopt_long_only() returned ='i' index = '0'
+getopt_long_only() returned ='w' index = '2'
+First 5 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+Last 5 elements:
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590
+getopt_long_only() returned ='i' index = '1'
+First 6 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+ petrochemistry's
+Last 6 elements:
+ harken
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590
+Should print 8 lines help
+getopt_long_only() returned ='i' index = '0'
+getopt_long_only() returned ='w' index = '2'
+First 8 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+ petrochemistry's
+ Cam's
+ flexion's
+Last 8 elements:
+ Zoller
+ Goodkin
+ harken
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590

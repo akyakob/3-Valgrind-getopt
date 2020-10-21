@@ -1,0 +1,5 @@
+#############################################################################
+# simple valgrind script
+#############################################################################
+valgrind --tool=memcheck --leak-check=yes --track-origins=yes ./TestDarray -i engWords.txt -w 5 > mem.txt 2>&1
+cat mem.txt

@@ -1,0 +1,13 @@
+EXAMPLE 1 ANSWERS
+1) No issues in the lab_b.c program, it printed
+	word 1
+	word 2
+	word 3
+2) Issues were identified. Bytes and blocks allocated: 3 allocs, 1 frees, 47 bytes allocated.
+	Memory lost: 35 bytes in 2 blocks.
+3) After the code was fixed there were 3 allocs, 3 frees, 47 allocated. 47 bytes allocated, 3 blocks and no memory lost.
+
+EXAMPLE 2 ANSWERS
+1) There are no issues with lab_c.c program. It printed "Last two random numbers are 86 94"
+2) There are now 2 errors and 1 allocs, 0 frees, 400 bytes.
+3) After fixing the code, there are 1 allocs, 1 frees, 400 allocated. 400 bytes allocated, 1 block and no memory lost.

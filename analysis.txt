@@ -1,0 +1,200 @@
+Anita Yakobchuk
+Analysis
+
+Resolved any memory leaks to previous dynamic array implementation and
+ added get_opt_long command in parsing features.
+Fixed my malloc arguemnts by taking out InitialSize* and fixed realloc
+ arguments because *sizeof(Data) needed to be added. 
+
+PART 1
+The output after mem1 script tested my DynamicArrays.c 
+
+==5667== Memcheck, a memory error detector
+==5667== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5667== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==5667== Command: ./simpleTest
+==5667== 
+This program inserts 3 objects into a dynamic array of 2 entries
+Line 1 contains text 'First line'
+Line 2 contains text 'Second line'
+Line 3 contains text 'Third line'
+==5667== 
+==5667== HEAP SUMMARY:
+==5667==     in use at exit: 0 bytes in 0 blocks
+==5667==   total heap usage: 2 allocs, 2 frees, 26,624 bytes allocated
+==5667== 
+==5667== All heap blocks were freed -- no leaks are possible
+==5667== 
+==5667== For counts of detected and suppressed errors, rerun with: -v
+==5667== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+PART 2
+Changed TestDarray.c by adding case statements and case parsers for input, wo
+rd, and help.
+Output after mem2 script ran:
+
+
+==26726== Memcheck, a memory error detector
+==26726== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26726== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==26726== Command: ./TestDarray -i shortWords.txt -w 5
+==26726== 
+getopt_long_only() returned ='i' index = '0'
+getopt_long_only() returned ='w' index = '0'
+First 5 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+Last 5 elements:
+ reheating's
+ nominalism
+ Siegler's
+ Brindisi's
+ Sandro
+Number of Words Read = 2000
+==26726== 
+==26726== HEAP SUMMARY:
+==26726==     in use at exit: 0 bytes in 0 blocks
+==26726==   total heap usage: 2,002 allocs, 2,002 frees, 51,737,856,568 bytes allocated
+==26726== 
+==26726== All heap blocks were freed -- no leaks are possible
+==26726== 
+==26726== For counts of detected and suppressed errors, rerun with: -v
+==26726== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+Output after test2 script ran:
+
+
+Should print program help
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+getopt_long_only() returned ='w' index = '0'
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+getopt_long_only() returned ='i' index = '0'
+getopt_long_only() returned ='w' index = '0'
+getopt_long_only() returned ='h' index = '0'
+./TestDarray: option requires an argument -- 'i'
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+getopt_long_only() returned ='?' index = '0'
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+getopt_long_only() returned ='h' index = '0'
+This program reads a text file and prints out the first and last
+N lines.
+Usage: ./TestDarray -i[n[put]] filename [-w|ord] num] [-h[elp]]
+ -i filename - the name of the file to read
+ -word num   - prints the number of words, default is 5
+ -help       - this help, no other action taken
+getopt_long_only() returned ='h' index = '3'
+Should print 5 lines help
+getopt_long_only() returned ='i' index = '0'
+First 6 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+ petrochemistry's
+Last 6 elements:
+ harken
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590
+getopt_long_only() returned ='i' index = '0'
+getopt_long_only() returned ='w' index = '0'
+First 5 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+Last 5 elements:
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590
+getopt_long_only() returned ='i' index = '0'
+getopt_long_only() returned ='w' index = '2'
+First 5 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+Last 5 elements:
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590
+getopt_long_only() returned ='i' index = '1'
+First 6 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+ petrochemistry's
+Last 6 elements:
+ harken
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590
+Should print 8 lines help
+getopt_long_only() returned ='i' index = '0'
+getopt_long_only() returned ='w' index = '2'
+First 8 elements:
+ dermatitis
+ toxins
+ wisted
+ benedictions
+ Tera
+ petrochemistry's
+ Cam's
+ flexion's
+Last 8 elements:
+ Zoller
+ Goodkin
+ harken
+ Pict's
+ Sidman's
+ intercohort
+ pressurize
+ besotting
+Number of Words Read = 206590
